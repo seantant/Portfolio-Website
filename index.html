@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sean Tant - Portfolio</title>
+    <title>Sean Tant</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <!--<link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -17,11 +16,9 @@
         <nav class="navbar">
             <div class="logo">
                 <h2 class="logo-heading">Sean Tant</h2>
+                <!--Icon?-->
             </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars hamburger-icon"></i>
-                <i class="fas fa-times cross-icon"></i>
-            </div>
+            <!--Hamburger menu-->
             <div class="menu">
                 <ul class="menu-list">
                     <li class="menu-list-items">
@@ -30,13 +27,13 @@
                         </a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#portfolio">
-                            Portfolio
+                        <a class="links" href="#about">
+                            About
                         </a>
                     </li>
                     <li class="menu-list-items">
-                        <a class="links" href="#about">
-                            About
+                        <a class="links" href="#portfolio">
+                            Portfolio
                         </a>
                     </li>
                     <li class="menu-list-items">
@@ -56,10 +53,9 @@
                 <h1 class="main-heading">Sean Tant</h1>
             </div>
             <div class="intro-buttons">
-                <a href="https://docs.google.com/document/d/14LwcpqXrpYi3Ky5lDejMlZEl4sWKIpkuuC-TijIj-IA/edit" 
-                   target="_blank">
-                    <button class="btn common-btn" >Resume</button>
-                </a>
+                <button class="btn common-btn" >
+                    Resume
+                </button>
             </div>
         </div>
     </section>
@@ -69,6 +65,42 @@
         <div class="about-text">
             <h1 class="main-heading">About Me</h1>
             <p class="paragraph"></p>
+        </div>
+    </section>
+
+    <!--Portfolio Section-->
+    <section class="portfolio" id="portfolio">
+        <div class="headings">
+            <h1 class="porfolio-heading">Portfolio</h1>
+            <!--Insert github link/icon-->
+        </div>
+        <div class="portfolio-object">
+            <ul class="portfolio-list">
+                <li class="portfolio-item">
+                    <a href="">
+                        <div class="project-preview">
+                            <h3 class="project-title">Music Generator</h3>
+                            <p class="project-description">Generate music using a trained LSTM model.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portfolio-item">
+                    <a href="">
+                        <div class="project-preview">
+                            <h3 class="project-title">Website</h3>
+                            <p class="project-description">This website shows what I'm working on.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portfolio-item">
+                    <a href="">
+                        <div class="project-preview">
+                            <h3 class="project-title">Open Source</h3>
+                            <p class="project-description">My contributions to the community.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -89,6 +121,7 @@
                               name="message" cols="30" 
                               rows="10">
                     </textarea>
+                    <
                 </form>
             </div>
         </div>
