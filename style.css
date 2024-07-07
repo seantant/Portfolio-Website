@@ -13,57 +13,43 @@ body {
 
 /*-------------------------------------Navbar Styles-------------------------------------*/
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-image: linear-gradient(90deg, #4291ab, #363D73); 
+    background-color: #4291ab;
+
 }
 
-.logo {
-    padding: 0 5rem;
-}
-
-.logo .logo-heading {
-    color: #fff;
-}
-
-.menu {
-    padding: 0 5rem;
-}
-
-.menu .menu-list {
-    display: flex;
-    list-style: none;
-}
-
-.menu-list .menu-list-item {
-    padding: 0.5rem 1rem;
-}
-
-@media screen and (min-width: 856px) and (max-width: 1024px) {
-    .menu-list .menu-list-item {
-        padding: 0.5rem 0.3rem;
-    }
-}
 
 
 /*-------------------------------------Home Styles-------------------------------------*/
 
+.home {
+    height: 100vh; 
+}
+
+.home-text {
+    padding: 5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+}
+
+
+/*-------------------------------------Portfolio Styles-------------------------------------*/
+
+.portfolio {
+    background-color: #4291ab;
+}
+
+
+/*-------------------------------------About Styles-------------------------------------*/
+
+
+
+
+/*-------------------------------------Contact Styles-------------------------------------*/
+
+.contact {
+    background-color: #4291ab;
+}
 
 
 /*-------------------------------------Utilities-------------------------------------*/
-
-.links:hover {
-    border-bottom: 2px solid #fff;
-}
-
-.links {
-    border-bottom: 2px solid transparent;
-    transition: all 0.25s;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-}

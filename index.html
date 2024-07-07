@@ -12,34 +12,25 @@
 
 <body>
     <!--Navbar Header-->
-    <header class="header">
+    <header>
         <nav class="navbar">
-            <div class="logo">
-                <h2 class="logo-heading">Sean Tant</h2>
-                <!--Icon?-->
+            <div class="logo-object">
+                <h1 class="logo-text">Sean Tant</h1>
             </div>
-            <!--Hamburger menu-->
-            <div class="menu">
+            <div class="menu-object">
+                <!--Figure out hamburger menu-->
                 <ul class="menu-list">
-                    <li class="menu-list-items">
-                        <a class="links" href="#home">
-                            Home
-                        </a>
+                    <li class="menu-list-item">
+                        <a class="links" href="#home">Home</a>
                     </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#about">
-                            About
-                        </a>
+                    <li class="menu-list-item">
+                        <a class="links" href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#portfolio">
-                            Portfolio
-                        </a>
+                    <li class="menu-list-item">
+                        <a class="links" href="#about">About</a>
                     </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#contact">
-                            Contact Me
-                        </a>
+                    <li class="menu-list-item">
+                        <a class="links" href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -48,32 +39,22 @@
 
     <!--Homepage Section-->
     <section class="home" id="home">
-        <div class="intro">
-            <div class="headings">
-                <h1 class="main-heading">Sean Tant</h1>
+        <div class="home-text">
+            <h1 class="home-name">Sean Tant</h1>
+            <div class="home-buttons">
+                <button class="home-button">Resume</button>
             </div>
-            <div class="intro-buttons">
-                <button class="btn common-btn" >
-                    Resume
-                </button>
-            </div>
+        </div>
+        <div class="home-image">
+            <!--Empty 4 now-->
         </div>
     </section>
 
-    <!--About Section-->
-    <section class="about" id="about">
-        <div class="about-text">
-            <h1 class="main-heading">About Me</h1>
-            <p class="paragraph"></p>
-        </div>
-    </section>
 
     <!--Portfolio Section-->
     <section class="portfolio" id="portfolio">
-        <div class="headings">
-            <h1 class="porfolio-heading">Portfolio</h1>
-            <!--Insert github link/icon-->
-        </div>
+        <h1 class="porfolio-heading">Portfolio</h1>
+        <!--Insert github link/icon-->
         <div class="portfolio-object">
             <ul class="portfolio-list">
                 <li class="portfolio-item">
@@ -104,28 +85,37 @@
         </div>
     </section>
 
-    <!--Contact Section-->
-    <section class="contact" id="contact">
-        <div class="contact-heading">
-            <h1 class="main-heading">Contact Me</h1>
-        </div>
-        <div class="contact-content">
-            <div class="contact-form-container">
-                <h1 class="contact-greeting">Leave A Message</h1>
-                <form class="contact-form">
-                    <input class="form-controls" type="text" placeholder="Your Name">
-                    <input class="form-controls" type="text" placeholder="Your Email">
-                    <input class="form-controls" type="text" placeholder="Subject">
-                    <textarea class="form-controls" 
-                              placeholder="Your Message" 
-                              name="message" cols="30" 
-                              rows="10">
-                    </textarea>
-                    <
-                </form>
+    
+    <!--About Section-->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h1 class="about-header">About Me</h1>
+            <div class="about-paragraph">
+                <p>a little bit about me...</p>
             </div>
         </div>
     </section>
+
+
+    <!--Contact Section-->
+    <section class="contact" id="contact">
+        <h1 class="contact-heading">Contact Me</h1>
+        <div class="contact-form">
+            <h2 class="contact-subheader">Leave a Message</h2>
+            <form class="contact-form">
+                <input class="form-controls" type="text" placeholder="Your Name">
+                <input class="form-controls" type="text" placeholder="Your Email">
+                <input class="form-controls" type="text" placeholder="Subject">
+                <textarea class="form-controls" placeholder="Type your message here..." 
+                          name="message" id="" cols="30" rows="10"></textarea>
+                <input class="form-button" type="submit" value="Send Message">
+            </form>
+        </div>
+        <div class="contact-info">
+            <!--To be added-->
+        </div>
+    </section>
+    
 </body>
 
 </html>
