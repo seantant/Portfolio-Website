@@ -2,15 +2,13 @@
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('fonts/JetBrainsMono-Regular.ttf');
-    font-weight: regular;
-    font-style: regular
+    font-style: regular;
 }
 
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('fonts/JetBrainsMono-Italic.ttf');
-    font-weight: regular;
-    font-style: italic
+    font-style: italic;
 }
 
 body {
@@ -21,6 +19,11 @@ body {
     color: #f8f8d5;
     background-color: #100f32;
 }
+
+* {
+    border: solid white 2px;
+}
+
 
 /*-------------------------------------Navbar Styles-------------------------------------*/
 
@@ -93,6 +96,16 @@ body {
     line-height: 4rem;
 }
 
+.home-button:hover {
+    border: solid #4291ab 2px;
+    background-color: #f8f8d5;
+    border-radius: 1rem;
+    font-family: "JetBrains Mono";
+    color: #4291ab;
+    padding: 1rem 1.5rem;
+    margin: 0rem 0rem 1rem;
+}
+
 .home-button {
     border: solid #f8f8d5 2px;
     background-color: #4291ab;
@@ -100,7 +113,8 @@ body {
     font-family: "JetBrains Mono";
     color: #f8f8d5;
     padding: 1rem 1.5rem;
-    margin: 0rem 0rem 1rem
+    margin: 0rem 0rem 1rem;
+    transition: all .25s;
 }
 
 .home-image {
@@ -113,14 +127,12 @@ body {
 
 .portfolio {
     padding: 5rem;
-    border: solid white 2px;
 }
 
 .portfolio-header {
     display: flex;
     justify-content: space-between;
     
-    border: solid white 2px;
 }
 
 .portfolio-heading {
@@ -128,12 +140,23 @@ body {
     font-size: 2rem;
 }
 
+.github-link:hover {
+    background-color: #4291ab;
+}
+
 .github-link {
     height: 3rem;
     width: 3rem;
-    background-color: white;
+    transition: all .25s;
+    background-color: transparent;
     vertical-align: middle;
     margin: 1.5rem;
+    border-radius: 5rem;
+}
+
+.github-logo {
+    height: 3rem;
+    width: 3rem;
 }
 
 .portfolio-list {
@@ -148,7 +171,7 @@ body {
 
 .project-preview {
     width: 300px;
-    padding: 1rem;
+    padding: 2rem;
     border: solid white 2px;
     border-radius: 2rem;
     align-items: center;
@@ -204,14 +227,77 @@ body {
 .contact {
     background-color: #4291ab;
     padding: 5rem;
-    justify-content: center;
+}
+
+.contact-heading {
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form-container {
+    border: solid #f8f8d5 2px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form {
-    align-items: center;
+    height: fit-content;
+    padding: 0 0 0 2rem;
 }
 
+.form-controls {
+    padding: 0.5rem;
+    font: 'JetBrains Mono';
+    width: 50%; 
+    margin: 0.75rem 0; 
+    border: solid #100f32 2px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.form-button:hover {
+    margin: 1rem;
+    border: solid #100f32 2px;
+    background-color: #f8f8d5;
+    border-radius: 1rem;
+    font-family: "JetBrains Mono";
+    color: #100f32;
+    padding: 1rem 1.5rem;
+}
+
+.form-button {
+    margin: 1rem;
+    border: solid #f8f8d5 2px;
+    background-color: #100f32;
+    border-radius: 1rem;
+    font-family: "JetBrains Mono";
+    color: #f8f8d5;
+    padding: 1rem 1.5rem;   
+    transition: all .25s;
+}
+
+.contact-info {
+    width: 50%;
+    border: solid white 2px;
+}
+
+.contact-info-list {
+    list-style-type: none;
+    padding: 0 0 0 2rem;
+}
 
 /*-------------------------------------Misc-------------------------------------*/
-
-
