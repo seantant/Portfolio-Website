@@ -1,55 +1,217 @@
 /* Styles for desktop */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Regular.ttf');
+    font-weight: regular;
+    font-style: regular
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Italic.ttf');
+    font-weight: regular;
+    font-style: italic
+}
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    font-family: 'JetBrains Mono';
+    color: #f8f8d5;
     background-color: #100f32;
 }
 
-
 /*-------------------------------------Navbar Styles-------------------------------------*/
-.navbar {
-    background-color: #4291ab;
 
+.navbar { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color: #4291ab;
+} 
+
+.logo-object {
+    padding: 0 7rem;
 }
 
+.logo-object .logo-text {
+    font-size: 1.8rem;
+    color: #f8f8d5;
+}
 
+.logo-link {
+    text-decoration: none;
+    color: #f8f8d5;
+}
+
+.menu-object {
+    padding: 0 7rem;
+}
+
+.menu-object .menu-list{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-list .menu-list-item {
+    padding: 1rem 1rem;
+}
+
+.navbar-links:hover {
+    border-bottom: 2px solid #f8f8d5;
+}
+
+.navbar-links {
+    border-bottom: 2px solid transparent;
+    transition: all .25s;
+    text-decoration: none;
+    color: #f8f8d5;
+}
 
 /*-------------------------------------Home Styles-------------------------------------*/
 
 .home {
-    height: 100vh; 
+    display: flex;
+    margin: 5rem 5rem 0rem;
+    padding: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    border: solid white 2px;
 }
 
 .home-text {
-    padding: 5rem;
-    margin: 0;
-    position: absolute;
-    top: 50%;
+    align-items: center;
 }
 
+.home-name {
+    font-size: 6rem;
+    font-style: italic;
+    line-height: 4rem;
+}
+
+.home-button {
+    border: solid #f8f8d5 2px;
+    background-color: #4291ab;
+    border-radius: 1rem;
+    font-family: "JetBrains Mono";
+    color: #f8f8d5;
+    padding: 1rem 1.5rem;
+    margin: 0rem 0rem 1rem
+}
+
+.home-image {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+}
 
 /*-------------------------------------Portfolio Styles-------------------------------------*/
 
 .portfolio {
-    background-color: #4291ab;
+    padding: 5rem;
+    border: solid white 2px;
 }
 
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    
+    border: solid white 2px;
+}
+
+.portfolio-heading {
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.github-link {
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    vertical-align: middle;
+    margin: 1.5rem;
+}
+
+.portfolio-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.portfolio-item {
+    padding: 3rem;
+}
+
+.project-preview {
+    width: 300px;
+    padding: 1rem;
+    border: solid white 2px;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+.portfolio-links:hover {
+    border-bottom: 2px solid #f8f8d5;
+}
+
+.portfolio-links {
+    border-bottom: 2px solid transparent;
+    transition: all .25s;
+    text-decoration: none;
+    font-size: 20pt;
+    color: #f8f8d5;
+}
+
+.portfolio-image {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
 
 /*-------------------------------------About Styles-------------------------------------*/
 
+.about {
+    padding: 5rem 5rem;
+}
 
+.about-text {
+    border: solid #f8f8d5 3px;
+    border-radius: 5rem;
+    justify-content: center;
+}
+
+.about-greeting {
+    padding: 2rem 4rem 1rem 4rem;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.about-paragraph {
+    padding: 1rem 4rem 2rem 4rem;
+}
+
+.about-paragraph-text {
+    padding: 1rem 1rem 1rem 12rem;
+}
 
 
 /*-------------------------------------Contact Styles-------------------------------------*/
 
 .contact {
     background-color: #4291ab;
+    padding: 5rem;
+    justify-content: center;
+}
+
+.contact-form {
+    align-items: center;
 }
 
 
-/*-------------------------------------Utilities-------------------------------------*/
+/*-------------------------------------Misc-------------------------------------*/
+
+

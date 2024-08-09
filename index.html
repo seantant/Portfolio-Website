@@ -10,91 +10,122 @@
     <link rel="stylesheet" href="responsive.css">
 </head>
 
+
 <body>
     <!--Navbar Header-->
     <header>
         <nav class="navbar">
             <div class="logo-object">
-                <h1 class="logo-text">Sean Tant</h1>
+                <a class="logo-link" href="#home">
+                    <h1 class="logo-text">Sean Tant</h1>
+                </a>
             </div>
             <div class="menu-object">
                 <!--Figure out hamburger menu-->
                 <ul class="menu-list">
                     <li class="menu-list-item">
-                        <a class="links" href="#home">Home</a>
+                        <a class="navbar-links" href="#home">Home</a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="links" href="#portfolio">Portfolio</a>
+                        <a class="navbar-links" href="#about">About</a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="links" href="#about">About</a>
+                        <a class="navbar-links" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="menu-list-item">
-                        <a class="links" href="#contact">Contact Me</a>
+                        <a class="navbar-links" href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
+
     <!--Homepage Section-->
     <section class="home" id="home">
         <div class="home-text">
-            <h1 class="home-name">Sean Tant</h1>
+            <h1 class="home-name">Sean</h1>
+            <h1 class="home-name">Tant</h1>
             <div class="home-buttons">
                 <button class="home-button">Resume</button>
+                <button class="home-button">Contact Me</button>
             </div>
         </div>
         <div class="home-image">
             <!--Empty 4 now-->
         </div>
     </section>
+    <p>{TEMPORARY BORDER}</p>
+
+
+    <!--About Section-->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2 class="about-greeting">Hey there! I'm Sean.</h2>
+            <div class="about-paragraph">
+                <!--I recently graduated from the University of Michigan with a B.S. in Computer Science and minor in Linguistics.
+                    During my studies, I found and fostered a passion for machine learning and artificial intelligence. -->
+                <p class="about-paragraph-text">Lorem ipsum odor amet, consectetuer adipiscing elit. Ultrices porttitor 
+                    gravida porta auctor dis quam himenaeos faucibus. Lobortis eget leo per dictum porttitor habitasse 
+                    pretium congue? Tortor elementum elit augue per dapibus per pharetra. Parturient massa diam tristique 
+                    tempor nostra felis interdum. In 
+                    elementum sed tempus tortor ultrices libero lacinia nulla. Eget dictumst massa parturient in cubilia 
+                    ultricies in risus. Maximus auctor vulputate amet metus ac placerat. Sit facilisis nulla sapien; 
+                    consectetur ante felis nam.
+                </p>
+                <p class="about-paragraph-text">Efficitur molestie proin dolor; litora justo interdum cursus nullam. Luctus convallis consequat magna 
+                    gravida vehicula; cubilia libero. Ac morbi risus felis dis sapien vivamus porttitor finibus. Dictum 
+                    nibh felis amet elementum donec turpis ad. Viverra cras litora habitant bibendum enim nunc ad. Est 
+                    tempus vestibulum scelerisque eros malesuada! Morbi proin sit dictumst cursus vivamus sem scelerisque 
+                    ante. Sit ad sapien vel velit venenatis nisl ex congue nec. Netus suscipit maecenas gravida donec 
+                    porttitor. Rhoncus ac tortor etiam egestas malesuada tortor venenatis duis id.
+                </p>
+            </div>
+        </div>
+    </section>
 
 
     <!--Portfolio Section-->
     <section class="portfolio" id="portfolio">
-        <h1 class="porfolio-heading">Portfolio</h1>
         <!--Insert github link/icon-->
         <div class="portfolio-object">
+            <div class="portfolio-header">
+                <h1 class="portfolio-heading">Portfolio</h1>
+                <div class="github-link"></div>
+            </div>
+            <p>{TEMPORARY BORDER}</p>
             <ul class="portfolio-list">
                 <li class="portfolio-item">
-                    <a href="">
-                        <div class="project-preview">
-                            <h3 class="project-title">Music Generator</h3>
-                            <p class="project-description">Generate music using a trained LSTM model.</p>
-                        </div>
-                    </a>
+                    <div class="project-preview">
+                        <div class="portfolio-image"></div>
+                        <a class="portfolio-links" href="#home">
+                            Music Generator
+                        </a>
+                        <p class="project-description">Generate music using a trained LSTM model.</p>
+                    </div>
                 </li>
                 <li class="portfolio-item">
-                    <a href="">
-                        <div class="project-preview">
-                            <h3 class="project-title">Website</h3>
-                            <p class="project-description">This website shows what I'm working on.</p>
-                        </div>
-                    </a>
+                    <div class="project-preview">
+                        <div class="portfolio-image"></div>
+                        <a class="portfolio-links" href="#home">
+                            Website
+                        </a>
+                        <p class="project-description">This website shows what I'm working on.</p>
+                    </div>
                 </li>
                 <li class="portfolio-item">
-                    <a href="">
-                        <div class="project-preview">
-                            <h3 class="project-title">Open Source</h3>
-                            <p class="project-description">My contributions to the community.</p>
-                        </div>
-                    </a>
+                    <div class="project-preview">
+                        <div class="portfolio-image"></div>
+                        <a class="portfolio-links" href="#home">
+                            Open Source
+                        </a>
+                        <p class="project-description">My contributions to the community.</p>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
-
-    
-    <!--About Section-->
-    <section class="about" id="about">
-        <div class="about-text">
-            <h1 class="about-header">About Me</h1>
-            <div class="about-paragraph">
-                <p>a little bit about me...</p>
-            </div>
-        </div>
-    </section>
+    <p>{TEMPORARY BORDER}</p>
 
 
     <!--Contact Section-->
