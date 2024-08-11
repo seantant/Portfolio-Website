@@ -2,7 +2,6 @@
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('fonts/JetBrainsMono-Regular.ttf');
-    font-style: regular;
 }
 
 @font-face {
@@ -20,9 +19,6 @@ body {
     background-color: #100f32;
 }
 
-* {
-    border: solid white 2px;
-}
 
 
 /*-------------------------------------Navbar Styles-------------------------------------*/
@@ -34,15 +30,16 @@ body {
     position: fixed; 
     top: 0; 
     width: 100%; 
+    height: 3rem;
     background-color: #4291ab;
 } 
 
 .logo-object {
-    padding: 0 7rem;
+    padding: 0 5rem;
 }
 
-.logo-object .logo-text {
-    font-size: 1.8rem;
+.logo-text {
+    font-size: 1.5rem;
     color: #f8f8d5;
 }
 
@@ -52,15 +49,16 @@ body {
 }
 
 .menu-object {
-    padding: 0 7rem;
+    padding: 0 3rem;
 }
 
-.menu-object .menu-list{
+.menu-list{
     display: flex;
     list-style-type: none;
+    margin-left: 0;
 }
 
-.menu-list .menu-list-item {
+.menu-list-item {
     padding: 1rem 1rem;
 }
 
@@ -69,10 +67,24 @@ body {
 }
 
 .navbar-links {
+    font-size: 1rem;
     border-bottom: 2px solid transparent;
     transition: all .25s;
     text-decoration: none;
     color: #f8f8d5;
+}
+
+.for-fun-link:hover {
+    border-bottom: 2px solid #f8f8d5;
+    color: #100f32;
+}
+
+.for-fun-link {
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all .25s;
+    text-decoration: none;
+    color: transparent;
 }
 
 /*-------------------------------------Home Styles-------------------------------------*/
@@ -83,7 +95,6 @@ body {
     padding: 10rem;
     align-items: center;
     justify-content: space-between;
-    border: solid white 2px;
 }
 
 .home-text {
@@ -163,14 +174,15 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: center;
+    padding-left: 0;
 }
 
 .portfolio-item {
     padding: 3rem;
+    flex-basis: 100%;
 }
 
 .project-preview {
-    width: 300px;
     padding: 2rem;
     border: solid white 2px;
     border-radius: 2rem;
@@ -203,6 +215,7 @@ body {
 
 .about-text {
     border: solid #f8f8d5 3px;
+    font-size: 1rem;
     border-radius: 5rem;
     justify-content: center;
 }
@@ -232,6 +245,12 @@ body {
 .contact-heading {
     font-style: italic;
     font-size: 2rem;
+    color: #f8f8d5;
+}
+
+.contact-subheader {
+    font-size: 1.5rem;
+    color: #f8f8d5;
 }
 
 .contact-content {
@@ -240,7 +259,6 @@ body {
 }
 
 .contact-form-container {
-    border: solid #f8f8d5 2px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -248,7 +266,7 @@ body {
 
 .contact-form {
     height: fit-content;
-    padding: 0 0 0 2rem;
+    padding: 2rem 0 0 2rem;
 }
 
 .form-controls {
@@ -270,9 +288,10 @@ textarea:focus {
 }
 
 .form-button:hover {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 2rem;
+    width: 25%;
     border: solid #100f32 2px;
-    background-color: #f8f8d5;
+    background-color: #fff;
     border-radius: 1rem;
     font-family: "JetBrains Mono";
     color: #100f32;
@@ -280,24 +299,67 @@ textarea:focus {
 }
 
 .form-button {
-    margin: 1rem;
-    border: solid #f8f8d5 2px;
+    margin: 1rem 1rem 1rem 2rem;
+    width: 25%;
+    border: solid #fff 2px;
     background-color: #100f32;
     border-radius: 1rem;
     font-family: "JetBrains Mono";
-    color: #f8f8d5;
+    color: #fff;
     padding: 1rem 1.5rem;   
     transition: all .25s;
 }
 
 .contact-info {
     width: 50%;
-    border: solid white 2px;
 }
 
 .contact-info-list {
+    margin-top: 2rem;
     list-style-type: none;
-    padding: 0 0 0 2rem;
+    padding: 0.5rem;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 1rem;
+}
+
+.contact-logo-container {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: fit-content;
+    align-items: center;
+}
+
+.contact-logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact-text-container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+}
+
+.contact-link {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-link:hover {
+    border-bottom: 2px solid #fff;
 }
 
 /*-------------------------------------Misc-------------------------------------*/
