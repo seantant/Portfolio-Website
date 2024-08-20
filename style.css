@@ -19,7 +19,9 @@ body {
     background-color: #100f32;
 }
 
-
+* {
+    border: solid white 2px;
+}
 
 /*-------------------------------------Navbar Styles-------------------------------------*/
 
@@ -160,14 +162,14 @@ body {
     width: 3rem;
     transition: all .25s;
     background-color: transparent;
-    vertical-align: middle;
     margin: 1.5rem;
-    border-radius: 5rem;
+    border-radius: 50%;
 }
 
 .github-logo {
-    height: 3rem;
-    width: 3rem;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
 }
 
 .portfolio-list {
@@ -189,16 +191,16 @@ body {
     align-items: center;
 }
 
-.portfolio-links:hover {
-    border-bottom: 2px solid #f8f8d5;
-}
-
 .portfolio-links {
     border-bottom: 2px solid transparent;
     transition: all .25s;
     text-decoration: none;
     font-size: 20pt;
     color: #f8f8d5;
+}
+
+.project-preview:hover > .portfolio-links {
+    border-bottom: 2px solid #f8f8d5;
 }
 
 .portfolio-image {
@@ -228,12 +230,12 @@ body {
 
 .about-paragraph {
     padding: 1rem 4rem 2rem 4rem;
+    text-align: justify;
 }
 
 .about-paragraph-text {
     padding: 1rem 1rem 1rem 12rem;
 }
-
 
 /*-------------------------------------Contact Styles-------------------------------------*/
 
@@ -271,11 +273,11 @@ body {
 
 .form-controls {
     padding: 0.5rem;
-    font: 'JetBrains Mono';
+    font-family: 'JetBrains Mono';
     width: 50%; 
     margin: 0.75rem 0; 
     border: solid #100f32 2px;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     text-decoration: none;
 }
 
@@ -291,7 +293,7 @@ textarea:focus {
     margin: 1rem 1rem 1rem 2rem;
     width: 25%;
     border: solid #100f32 2px;
-    background-color: #fff;
+    background-color: #f8f8d5;
     border-radius: 1rem;
     font-family: "JetBrains Mono";
     color: #100f32;
@@ -317,7 +319,7 @@ textarea:focus {
 .contact-info-list {
     margin-top: 2rem;
     list-style-type: none;
-    padding: 0.5rem;
+    padding: 2rem;
     justify-content: center;
     margin-left: 0;
 }
