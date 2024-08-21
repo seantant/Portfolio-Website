@@ -19,10 +19,6 @@ body {
     background-color: #100f32;
 }
 
-* {
-    border: solid white 2px;
-}
-
 /*-------------------------------------Navbar Styles-------------------------------------*/
 
 .navbar { 
