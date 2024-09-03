@@ -72,18 +72,6 @@ body {
     color: #f8f8d5;
 }
 
-.for-fun-link:hover {
-    border-bottom: 2px solid #f8f8d5;
-    color: #100f32;
-}
-
-.for-fun-link {
-    font-size: 1rem;
-    border-bottom: 2px solid transparent;
-    transition: all .25s;
-    text-decoration: none;
-    color: transparent;
-}
 
 /*-------------------------------------Home Styles-------------------------------------*/
 
@@ -182,7 +170,7 @@ body {
 
 .project-preview {
     padding: 2rem;
-    border: solid white 2px;
+    border: solid #f8f8d5 2px;
     border-radius: 2rem;
     align-items: center;
 }
@@ -289,7 +277,7 @@ textarea:focus {
     margin: 1rem 1rem 1rem 2rem;
     width: 25%;
     border: solid #100f32 2px;
-    background-color: #f8f8d5;
+    background-color: #fff;
     border-radius: 1rem;
     font-family: "JetBrains Mono";
     color: #100f32;

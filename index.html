@@ -35,9 +35,6 @@
                     <li class="menu-list-item">
                         <a class="navbar-links" href="#contact">Contact Me</a>
                     </li>
-                    <li class="menu-list-item">
-                        <a class="for-fun-link" href="#fun">For Fun!</a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -132,13 +129,14 @@
             <div class="contact-form-container">
                 <h2 class="contact-subheader">Leave a Message</h2>
                 <form class="contact-form">
-                    <input class="form-controls" type="text" placeholder="Your Name">
-                    <input class="form-controls" type="text" placeholder="Your Email">
-                    <input class="form-controls" type="text" placeholder="Subject">
+                    <input class="form-controls" type="text" placeholder="Your Name" name="name">
+                    <input class="form-controls" type="text" placeholder="Your Email" name="email">
+                    <input class="form-controls" type="text" placeholder="Subject" name="subject">
                     <textarea class="form-controls" placeholder="Type your message here..." 
                             name="message" id="" cols="30" rows="10"></textarea>
                 </form>
                 <input class="form-button" type="submit" value="Send Message">
+                <script src="formHandler.js"></script>
             </div>
             <div class="contact-info">
                 <h2 class="contact-subheader">My Info</h2>
