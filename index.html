@@ -47,13 +47,11 @@
             <h1 class="home-name">Sean</h1>
             <h1 class="home-name">Tant</h1>
             <div class="home-buttons">
-                <button class="home-button">Resume</button>
-                <button class="home-button">Contact Me</button>
+                <a href="#portfolio" class="home-button">Resume</a>
+                <a href="#contact" class="home-button">Contact Me</a>
             </div>
         </div>
-        <div class="home-image">
-            <!--Empty 4 now-->
-        </div>
+        <img src="images/headshot.jpg" class="headshot">
     </section>
 
 
@@ -63,16 +61,13 @@
             <h2 class="about-greeting">Hey there! I'm Sean.</h2>
             <div class="about-paragraph">
                 <!---->
-                <p class="about-paragraph-text">I am a passionate software engineer specializing in data science 
-                    and machine learning. [add another line about interest] I recently graduated from the University of
-                    Michigan in Ann Arbor with a Bachelor of Science in Computer Science and a minor in Linguistics.
-                </p>
-                <p class="about-paragraph-text">Efficitur molestie proin dolor; litora justo interdum cursus nullam. Luctus convallis consequat magna 
-                    gravida vehicula; cubilia libero. Ac morbi risus felis dis sapien vivamus porttitor finibus. Dictum 
-                    nibh felis amet elementum donec turpis ad. Viverra cras litora habitant bibendum enim nunc ad. Est 
-                    tempus vestibulum scelerisque eros malesuada! Morbi proin sit dictumst cursus vivamus sem scelerisque 
-                    ante. Sit ad sapien vel velit venenatis nisl ex congue nec. Netus suscipit maecenas gravida donec 
-                    porttitor. Rhoncus ac tortor etiam egestas malesuada tortor venenatis duis id.
+                <p class="about-paragraph-text">
+                    I am a software engineer specializing in data science and machine learning. 
+                    I recently graduated from the University of Michigan in Ann Arbor with a Bachelor 
+                    of Science in Computer Science and a minor in Linguistics. I am currently seeking
+                    full-time work as a data scientist to begin my career and continue to grow my 
+                    skills. In my free time, I enjoy playing the cello, weightlifting, yoga and 
+                    meditation, and video games.
                 </p>
             </div>
         </div>
@@ -93,16 +88,18 @@
                 <li class="portfolio-item">
                     <div class="project-preview">
                         <div class="portfolio-image"></div>
-                        <a class="portfolio-links" href="#home">
+                        <a href="https://github.com/seantant/Music-Generator" 
+                        target="_blank" class="portfolio-links">
                             Music Generator
                         </a>
-                        <p class="project-description">Generate music using a trained LSTM model.</p>
+                        <p class="project-description">Generate music using an LSTM model.</p>
                     </div>
                 </li>
                 <li class="portfolio-item">
                     <div class="project-preview">
                         <div class="portfolio-image"></div>
-                        <a class="portfolio-links" href="#home">
+                        <a href="https://github.com/seantant/Portfolio-Website" 
+                        target="_blank" class="portfolio-links">
                             Website
                         </a>
                         <p class="project-description">This website shows what I'm working on.</p>
@@ -111,10 +108,11 @@
                 <li class="portfolio-item">
                     <div class="project-preview">
                         <div class="portfolio-image"></div>
-                        <a class="portfolio-links" href="#home">
-                            Open Source
+                        <a href="https://github.com/seantant/medication-tracker" 
+                        target="_blank" class="portfolio-links">
+                            Medication Tracker
                         </a>
-                        <p class="project-description">My contributions to the community.</p>
+                        <p class="project-description">A web app that reminds users when to take medications.</p>
                     </div>
                 </li>
             </ul>
@@ -134,9 +132,9 @@
                     <input class="form-controls" type="text" placeholder="Subject" name="subject">
                     <textarea class="form-controls" placeholder="Type your message here..." 
                             name="message" id="" cols="30" rows="10"></textarea>
+                    <br><br>
+                    <input class="form-button" type="submit" value="Send Message">
                 </form>
-                <input class="form-button" type="submit" value="Send Message">
-                <script src="formHandler.js"></script>
             </div>
             <div class="contact-info">
                 <h2 class="contact-subheader">My Info</h2>
@@ -154,14 +152,14 @@
                     </li>
                     <li class="contact-item">
                         <div class="contact-logo-container">
-                            <a href="https://www.linkedin.com/in/sean-tant-b415bb211/"
+                            <a href="https://www.linkedin.com/in/sean-tant/"
                             target = "_blank">
                                 <img src="images/resume.svg" class="contact-logo">
                             </a>
                         </div>
                         <div class="contact-text-container">
-                            <a href="https://www.linkedin.com/in/sean-tant-b415bb211/" 
-                            target = "_blank" class="contact-link">Resume</a>
+                            <a href="https://www.linkedin.com/in/sean-tant/" 
+                            target = "_blank" class="contact-link">My Resume</a>
                         </div>
                     </li>
                     <li class="contact-item">
@@ -178,13 +176,13 @@
                     </li>
                     <li class="contact-item">
                         <div class="contact-logo-container">
-                            <a href="https://www.linkedin.com/in/sean-tant-b415bb211/"
+                            <a href="https://www.linkedin.com/in/sean-tant/"
                             target = "_blank">
                                 <img src="images/linkedin.svg" class="contact-logo">
                             </a>
                         </div>
                         <div class="contact-text-container">
-                            <a href="https://www.linkedin.com/in/sean-tant-b415bb211/" 
+                            <a href="https://www.linkedin.com/in/sean-tant/" 
                             target = "_blank" class="contact-link">LinkedIn</a>
                         </div>
                     </li>
